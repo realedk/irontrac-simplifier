@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "IronTrac Simplifier",
+  "version": "1.0.0",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "IronTrac Simplifier",
+    "default_popup": "popup.html"
+  },
+  "description": "Adds buttons IronTrac should have had to begin with.",
+  "content_scripts": [{
+    "matches": ["https://app.irontrac.com/*"],
+    "js": ["content.js"],
+    "css": ["content.css"],
+    "run_at": "document_idle"
+  }]
+}

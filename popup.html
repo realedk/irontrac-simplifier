@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IronTrac Asset Selector</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>IronTrac Simplifier</h1>
+  <div class="settings-row">
+    <label class="switch-label">
+      <input id="enabled" type="checkbox" role="switch" disabled aria-describedby="refresh-message">
+      <span class="switch-track" aria-hidden="true"></span>
+      <span id="setting-label">Enabled</span>
+    </label>
+    <button id="refresh" type="button" disabled>Refresh page</button>
+  </div>
+  <p id="refresh-message">After enabling or disabling, use <strong>Refresh page</strong> to apply the change to your IronTrac tab.</p>
+  <p id="status" role="status" aria-live="polite"></p>
+  <script src="popup.js"></script>
+</body>
+</html>
